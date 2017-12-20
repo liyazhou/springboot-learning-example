@@ -1,6 +1,7 @@
 package org.spring.springboot;
 
 import org.spring.springboot.property.HomeProperties;
+import org.spring.springboot.property.UserProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,6 +18,8 @@ public class Application implements CommandLineRunner {
 
     @Autowired
     private HomeProperties homeProperties;
+    @Autowired
+    private UserProperties userProperties;
 
     public static void main(String[] args) {
         // 程序启动入口
@@ -27,6 +30,7 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("\n" + homeProperties.toString());
+        System.out.println("\n" + userProperties.toString());
         System.out.println();
     }
 }

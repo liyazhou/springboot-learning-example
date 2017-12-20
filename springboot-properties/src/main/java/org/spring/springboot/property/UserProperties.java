@@ -20,7 +20,7 @@ public class UserProperties {
     private int age;
 
     /**
-     * 用户名称
+     * 用户名称private String uuid;
      */
     private String desc;
 

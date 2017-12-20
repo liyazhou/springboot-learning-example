@@ -27,6 +27,7 @@ public class UserController {
      *    处理 "/users" 的 GET 请求，用来获取用户列表
      *    通过 @RequestParam 传递参数，进一步实现条件查询或者分页查询
      */
+//    http://127.0.0.1:8080/users
     @RequestMapping(method = RequestMethod.GET)
     public String getUserList(ModelMap map) {
         map.addAttribute("userList", userService.findAll());
